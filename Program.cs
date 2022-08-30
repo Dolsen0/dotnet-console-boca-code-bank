@@ -13,7 +13,7 @@ BankAccount account2 = new SavingAccount(500);
 try{
 decimal newBalance = account2.MakeDepositGetDeposit(100);
 }catch(Exception ex){
-    Console.WriteLine($"we got an error when running MakeDepositGetDeposit(-1) or any other negative number ");
+    Console.WriteLine($"we got an error when running MakeDepositGetDeposit(-1) or any other negative number {ex.ToString()} ");
 }
 
 
